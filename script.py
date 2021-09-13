@@ -3,7 +3,7 @@ from string import *
 import csv
 from urllib.request import Request, urlopen
 for i in range(1,7):
-    urlpage = 'http://dz.kompass.com/a/agriculture-et-sylviculture/02/page-'+str(i)+'/'
+    urlpage = 'URL/page-'+str(i)+'/'
     page = Request(urlpage, headers={'User-Agent': 'Mozilla/5.0'})
     webpage_byte = urlopen(page).read()
     webpage = webpage_byte.decode('utf-8')
